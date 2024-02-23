@@ -1,0 +1,19 @@
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 15px 22px 15px;
+}
+.nav_bar .menu {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+.nav_bar .menu .menu_link {
+  text-decoration-line: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.nav_bar .menu .menu_link:hover {
+  text-decoration-line: underline;
+}/*# sourceMappingURL=navBar.module.css.map */

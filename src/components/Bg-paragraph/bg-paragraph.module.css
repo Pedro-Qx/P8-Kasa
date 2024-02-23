@@ -1,0 +1,14 @@
+.bg_parph {
+  display: flex;
+  position: relative;
+  height: 111px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  align-items: center;
+}
+.bg_parph .parph {
+  margin-left: 15px;
+  font-size: 24px;
+  color: white;
+}/*# sourceMappingURL=bg-paragraph.module.css.map */

@@ -1,0 +1,16 @@
+.item_list_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  /*
+      background-color: $bg_color;
+      width: 1240px;
+      height: 829px;
+      border-radius: 25px;
+      */
+}/*# sourceMappingURL=itemsContainer.module.css.map */

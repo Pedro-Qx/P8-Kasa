@@ -1,0 +1,14 @@
+.banner {
+  position: relative;
+  height: 111px;
+  width: 100%;
+  margin-bottom: 22px;
+}
+.banner .bg_pic {
+  position: absolute;
+  height: 111px;
+  width: 100%;
+  border-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=banner.module.css.map */

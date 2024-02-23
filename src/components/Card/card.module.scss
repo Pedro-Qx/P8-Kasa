@@ -1,0 +1,90 @@
+// taille écran min 320px
+
+.card {
+    position: relative;
+    
+    &:nth-child(n+4) {
+        display: none;
+        /* Ocultar las imágenes a partir de la séptima */
+    }
+
+    .img {
+        background-size: cover;
+        border-radius: 7px;
+        width: 100%;
+        height: auto;
+    }
+
+    .p {
+        position: absolute;
+        top: 69%;
+        left: 5%;
+        width: 67vw;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        color: black;
+        font-weight: 700;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        .img {
+            width: 340px; 
+            height: 340px; 
+        }
+        
+        .p {
+            top: 78%;
+            left: 5%;
+            width: 265px;
+            font-size: 1.2rem; //18px
+        }
+
+        &:nth-child(-n+6) {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .card {
+        .img {
+            width: 290px; 
+            height: 290px; 
+        }
+        .p {
+            top: 75%;
+            width: 230px;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card {
+        .img {
+            width: 350px; // 240 340 (figma) 315 (yo)
+            height: 350px; //240 340
+        }
+        .p {
+            top: 77%;
+            width: 290px;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .card {
+        .img {
+            width: 400px; // 240 340 (figma) 315 (yo)
+            height: 400px; //240 340
+        }
+        .p {
+            top: 79%;
+            width: 340px;
+        }
+    }
+}
