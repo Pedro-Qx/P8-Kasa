@@ -1,8 +1,8 @@
 import data from "./BackendKasa.json";
 
 const FetchRentals = () => {
-    return new Promise((resoleve, reject) =>{ //je fais une promèse et je la résous 
-        resoleve(data)
+    return new Promise((resolve, reject) =>{ //je fais une promèse et je la résous 
+        resolve(data)
     })
 }
 

@@ -3,6 +3,7 @@ import FetchRentals from "../../utils/context/FetchRentals";
 import { useEffect, useState } from "react";
 import Card from "../Card";
 import style from "./itemsContainer.module.scss"
+import { Link } from "react-router-dom";
 
 const ItemListContainer =()=>{
     const [rentals, setrentals] = useState([]);
@@ -12,7 +13,6 @@ const ItemListContainer =()=>{
             .then((resp) => {
                 setrentals(resp)
             })
-
     }, [])
 
     return (
@@ -21,7 +21,7 @@ const ItemListContainer =()=>{
             {
                 rentals.map((rental) => {
                     return (
-                        <Card key={rental.id} rentls={rental} />
+                        <Link to={`/logements/${rental.id}`} key={rental.id} className={style.linksLogements}> <Card rentls={rental} /> </Link>
                     )
                 })
             }
@@ -29,5 +29,6 @@ const ItemListContainer =()=>{
         </div>
     )
 };
+
 
 export default ItemListContainer;

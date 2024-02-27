@@ -3,11 +3,6 @@
 .card {
     position: relative;
     
-    &:nth-child(n+4) {
-        display: none;
-        /* Ocultar las imágenes a partir de la séptima */
-    }
-
     .img {
         background-size: cover;
         border-radius: 7px;
@@ -43,10 +38,7 @@
             width: 265px;
             font-size: 1.2rem; //18px
         }
-
-        &:nth-child(-n+6) {
-            display: block;
-        }
+        
     }
 }
 

@@ -1,0 +1,117 @@
+@keyframes iconRot{
+    0% {
+        transform: rotate(0deg);
+    }
+ 
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes iconRotBack{
+    0% {
+        transform: rotate(180deg);
+    }
+ 
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes deployText{
+    0% {
+        transform: scaleY(0);
+        transform-origin:top;
+    }
+    
+      
+    50%,100%{
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes deployBackText{
+    0% {
+        transform: scaleY(1);
+        transform-origin:bottom;
+    }
+          
+    50%,100%{
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+.display_collaps {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    .collaps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        min-height: 4vh;
+        background-color: #FF6060;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+        
+        .title {
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .icon {
+            cursor: pointer;
+            font-weight: 700;
+            color: white;
+            font-size: 1rem;
+        }
+        .iconAnim{
+            animation: iconRot 0.5s ease-in-out forwards;
+        }
+
+        .iconBackAnim{
+            animation: iconRotBack 0.5s forwards;              
+        }
+
+    }
+
+    .displayNon{
+        display: none;
+    }
+
+    .display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: auto;
+        min-height: 10vh;
+        background-color: #F6F6F6;
+        border-radius: 5px;
+        
+
+        .descript {
+            padding: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .deploy{
+            animation: deployText 0.5s forwards;
+        }
+        
+        .deployBack{
+            animation: deployBackText 0.5 forwards;
+        }
+
+    }
+}

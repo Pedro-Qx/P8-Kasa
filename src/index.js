@@ -15,10 +15,10 @@ root.render(
     <Router>
       <NavBar />
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/apropos" element={<Apropos />} />
-            <Route path="/logements" element={<Logement />} />
-            <Route path="*" element={<Error />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/apropos' element={<Apropos />} />
+            <Route path='/logements/:logementId' element={<Logement />} />
+            <Route path='*' element={<Error />} />
         </Routes>
       <Footer />
     </Router>
