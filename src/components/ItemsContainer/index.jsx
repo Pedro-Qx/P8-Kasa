@@ -15,6 +15,12 @@ const ItemListContainer =()=>{
             })
     }, [])
 
+    useEffect(()=> {
+        
+
+        }, [])  
+    
+
     return (
         <div className={style.item_list_container}>
 

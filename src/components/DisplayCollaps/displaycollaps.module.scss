@@ -20,30 +20,55 @@
 
 @keyframes deployText{
     0% {
-        transform: scaleY(0);
+        transform: translateY(-15%);
         transform-origin:top;
+        visibility: hidden;
     }
-    
-      
-    50%,100%{
-        transform: scaleY(0.5);
-    }
+
     100% {
-        transform: scaleY(1);
+        transform: translateY(0%);
+        
     }
 }
 
 @keyframes deployBackText{
     0% {
-        transform: scaleY(1);
+        transform: translateY(0%);
         transform-origin:bottom;
+        
     }
           
-    50%,100%{
-        transform: scaleY(0.5);
+       100% {
+        transform: translateY(-15%);
+        visibility: hidden;
+        
     }
+}
+
+@keyframes deployContainer{
+    0% {
+        transform: translateY(-15%);
+        transform-origin:top;
+        visibility: hidden;
+    }
+
     100% {
-        transform: scaleY(0);
+        transform: translateY(0%);
+        display: flex;
+    }
+}
+
+@keyframes deployBackContianer{
+    0% {
+        transform: translateY(0%);
+        transform-origin:bottom;
+        
+    }
+          
+       100% {
+        transform: translateY(-15%);
+        visibility: hidden;
+        height: 0vh;
     }
 }
 
@@ -51,7 +76,7 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-
+            
     .collaps {
         display: flex;
         justify-content: space-between;
@@ -62,7 +87,8 @@
         padding-left: 10px;
         padding-right: 10px;
         border-radius: 5px;
-        
+        z-index: 8;
+                                
         .title {
             color: white;
             font-weight: 700;
@@ -80,16 +106,12 @@
         }
 
         .iconBackAnim{
-            animation: iconRotBack 0.5s forwards;              
+            animation: iconRotBack 0.5s ease-in-out forwards;              
         }
 
     }
 
-    .displayNon{
-        display: none;
-    }
-
-    .display {
+    .displayOn {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -97,21 +119,29 @@
         min-height: 10vh;
         background-color: #F6F6F6;
         border-radius: 5px;
-        
-
+        animation: deployContainer 0.3s linear forwards;
         .descript {
             padding: 20px;
             font-size: 1rem;
             font-weight: 400;
+            animation: deployText 0.3s linear forwards;
         }
+    }
 
-        .deploy{
-            animation: deployText 0.5s forwards;
+    .displayOff{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        background-color:#F6F6F6;
+        border-radius: 5px;
+        animation: deployBackContianer 0.4s linear forwards;
+        z-index: 1;
+        .descript {
+            padding: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            animation: deployBackText 0.3s linear forwards;
         }
-        
-        .deployBack{
-            animation: deployBackText 0.5 forwards;
-        }
-
     }
 }
