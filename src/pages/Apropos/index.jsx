@@ -6,6 +6,7 @@ import style from "../Apropos/apropos.module.scss";
 
 const Apropos = ()=>{
     const picSrc = "assets/Image source 2.png";
+    
     return (
         <div className={style.aprop_container}>
             <Banner bannerPic={picSrc} className={style.banner}/>

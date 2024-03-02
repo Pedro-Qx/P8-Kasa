@@ -1,22 +1,16 @@
 import React from "react";
-import { useState } from "react";
 import Carrousel from "../../components/Carrousel";
-import DisplayCollaps from "../../components/DisplayCollaps/index";
 
-const Logement = ()=>{
-    const [rentals, setrentals] = useState([])
-            
+
+const Logement = ({rentals, setrentals})=>{
+                
     return (
         <div>
                      
-           <Carrousel rentals={rentals} setrentals={setrentals} />
-           <DisplayCollaps rentals={rentals} setrentals={setrentals} />
-           
+           <Carrousel />
+                      
         </div>
     )
 }
 
 export default Logement
-
-
-                        

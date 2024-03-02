@@ -1,12 +1,12 @@
 import React from "react";
 import FetchRentals from "../../utils/context/FetchRentals";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Card from "../Card";
 import style from "./itemsContainer.module.scss"
 import { Link } from "react-router-dom";
 
-const ItemListContainer =()=>{
-    const [rentals, setrentals] = useState([]);
+const ItemListContainer =({rentals, setrentals})=>{
+    //const [rentals, setrentals] = useState([]);
 
     useEffect(() => {
         FetchRentals()
@@ -15,12 +15,7 @@ const ItemListContainer =()=>{
             })
     }, [])
 
-    useEffect(()=> {
-        
-
-        }, [])  
-    
-
+   
     return (
         <div className={style.item_list_container}>
 
