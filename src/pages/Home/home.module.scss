@@ -1,0 +1,17 @@
+.items_container{
+    margin: 20px;
+    .banner{
+        position: relative;
+        height: 111px;
+        width: 100%;
+        margin-bottom: 22px;
+                
+        .bg_pic{
+            position: absolute;
+            height: 111px;
+            width: 100%;        
+            border-radius: 7px;
+            object-fit: cover;
+        }
+    }
+}

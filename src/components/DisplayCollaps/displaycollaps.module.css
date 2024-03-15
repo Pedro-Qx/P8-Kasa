@@ -1,0 +1,196 @@
+@keyframes iconRot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes iconRotBack {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes deployText {
+  0% {
+    transform: translateY(-15%);
+    transform-origin: top;
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes deployBackText {
+  0% {
+    transform: translateY(0%);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: translateY(-15%);
+    visibility: hidden;
+  }
+}
+@keyframes deployContainer {
+  0% {
+    transform: translateY(-15%);
+    transform-origin: top;
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes deployBackContianer {
+  0% {
+    transform: translateY(0%);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: translateY(-15%);
+    height: 0vh;
+  }
+}
+.collapsContainerLg {
+  width: 100%;
+}
+.collapsContainerLg .logemCollaps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4vh;
+  background-color: #FF6060;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.collapsContainerLg .logemCollaps .title {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.collapsContainerLg .logemCollaps .icon {
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+  font-size: 1rem;
+}
+.collapsContainerLg .logemCollaps .iconAnim {
+  animation: iconRot 0.5s ease-in-out forwards;
+}
+.collapsContainerLg .logemCollaps .iconBackAnim {
+  animation: iconRotBack 0.5s ease-in-out forwards;
+}
+.collapsContainerLg .displayOn {
+  justify-content: center;
+  align-items: center;
+  min-width: auto;
+  min-height: 10vh;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  animation: deployContainer 0.3s linear forwards;
+}
+.collapsContainerLg .displayOn .descript {
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  animation: deployText 0.2s linear forwards;
+}
+.collapsContainerLg .displayOff {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  animation: deployBackContianer 0.3s linear forwards;
+  z-index: 1;
+}
+.collapsContainerLg .displayOff .descript {
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  animation: deployBackText 0.2s linear forwards;
+}
+
+.collapsContainerAp {
+  width: 100%;
+}
+.collapsContainerAp .collaps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5vh;
+  background-color: #FF6060;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  z-index: 8;
+}
+.collapsContainerAp .collaps .title {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.collapsContainerAp .collaps .icon {
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  font-size: 1.2rem;
+}
+.collapsContainerAp .collaps .iconAnim {
+  animation: iconRot 0.5s ease-in-out forwards;
+}
+.collapsContainerAp .collaps .iconBackAnim {
+  animation: iconRotBack 0.5s ease-in-out forwards;
+}
+.collapsContainerAp .displayOn {
+  justify-content: center;
+  align-items: center;
+  min-width: auto;
+  min-height: 10vh;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  animation: deployContainer 0.3s linear forwards;
+}
+.collapsContainerAp .displayOn .descript {
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  animation: deployText 0.2s linear forwards;
+}
+.collapsContainerAp .displayOff {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  animation: deployBackContianer 0.3s linear forwards;
+  z-index: 1;
+}
+.collapsContainerAp .displayOff .descript {
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  animation: deployBackText 0.2s linear forwards;
+}
+
+@media screen and (min-width: 634px) {
+  .collapsContainerLg {
+    width: 42vw;
+  }
+  .collapsContainerAp {
+    width: 100%;
+  }
+  .collapsContainerAp .collaps {
+    min-height: 6vh;
+  }
+  .collapsContainerAp .collaps .title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .collapsContainerAp .collaps .icon {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=displaycollaps.module.css.map */

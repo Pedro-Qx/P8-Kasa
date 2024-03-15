@@ -1,0 +1,23 @@
+.host {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.host .hostPhContainer {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 100px;
+  background-color: #FF6060;
+  margin: 10px;
+}
+.host .hostPhContainer .hostPh {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 100px;
+}
+.host .hostName {
+  font-size: 1em;
+  color: #FF6060;
+}/*# sourceMappingURL=host.module.css.map */

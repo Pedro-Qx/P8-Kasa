@@ -1,0 +1,36 @@
+.carrouselContainer {
+  width: 90vw;
+  height: 50vh;
+  margin-bottom: 2vh;
+}
+.carrouselContainer .carrPictures {
+  width: 90vw;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  border-radius: 7px;
+}
+.carrouselContainer .arrowsContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.carrouselContainer .arrowsContainer .arrows {
+  position: relative;
+  color: white;
+  font-size: 4em;
+  font-weight: 700;
+}
+.carrouselContainer .arrowsContainer .arrowLeft {
+  position: absolute;
+  cursor: pointer;
+  top: -27vh;
+  left: 2vh;
+}
+.carrouselContainer .arrowsContainer .arrowRight {
+  position: absolute;
+  cursor: pointer;
+  top: -27vh;
+  right: 2vh;
+}/*# sourceMappingURL=carrousel.module.css.map */
