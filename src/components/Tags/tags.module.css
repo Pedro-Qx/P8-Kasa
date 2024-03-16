@@ -7,8 +7,8 @@
 }
 .tagsContainer .tag {
   height: auto;
-  border-radius: 5px;
+  padding: 5px 30px 5px 30px;
+  border-radius: 15px;
   background-color: #FF6060;
   color: white;
-  padding: 5px;
 }/*# sourceMappingURL=tags.module.css.map */

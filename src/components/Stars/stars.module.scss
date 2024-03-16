@@ -1,11 +1,17 @@
 .starsRating {
     display: flex;
-    font-size: 2em;
-    gap: 5px;
-    .redstar{
-        color:#FF6060;
+    gap:5px;
+    width: auto;
+
+    .star {
+        font-size: 2em;
     }
-    .greystar{
-        color:#E3E3E3;
+
+    .redstar {
+        color: #FF6060;
+    }
+
+    .greystar {
+        color: #E3E3E3;
     }
 }

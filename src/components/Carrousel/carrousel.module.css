@@ -1,36 +1,45 @@
 .carrouselContainer {
-  width: 90vw;
-  height: 50vh;
-  margin-bottom: 2vh;
+  position: relative;
 }
 .carrouselContainer .carrPictures {
-  width: 90vw;
-  height: 50vh;
+  width: 100%;
+  border-radius: 10px;
+  min-height: 35vh;
   -o-object-fit: cover;
      object-fit: cover;
-  background-size: cover;
-  border-radius: 7px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .carrouselContainer .arrowsContainer {
   display: flex;
   justify-content: space-between;
-  position: relative;
-}
-.carrouselContainer .arrowsContainer .arrows {
-  position: relative;
-  color: white;
-  font-size: 4em;
-  font-weight: 700;
 }
 .carrouselContainer .arrowsContainer .arrowLeft {
   position: absolute;
-  cursor: pointer;
-  top: -27vh;
-  left: 2vh;
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+  top: 50%;
+  left: 15px;
 }
 .carrouselContainer .arrowsContainer .arrowRight {
+  color: white;
   position: absolute;
-  cursor: pointer;
-  top: -27vh;
-  right: 2vh;
+  font-size: 2em;
+  font-weight: 400;
+  top: 50%;
+  right: 15px;
+}
+
+@media screen and (min-width: 634px) {
+  .carrouselContainer .carrPictures {
+    height: 50vh;
+  }
+  .carrouselContainer .arrowsContainer .arrowLeft {
+    font-size: 5em;
+  }
+  .carrouselContainer .arrowsContainer .arrowRight {
+    font-size: 5em;
+  }
 }/*# sourceMappingURL=carrousel.module.css.map */

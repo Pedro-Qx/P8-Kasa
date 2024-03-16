@@ -1,0 +1,52 @@
+.carrouselContainer{
+    position: relative;
+    
+    .carrPictures{
+        width: 100%;
+        border-radius: 10px;
+        min-height:35vh;
+        object-fit: cover;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .arrowsContainer{
+        display: flex;
+        justify-content: space-between;
+        
+        .arrowLeft{
+            position: absolute;
+            color: white;
+            font-size: 2em;
+            font-weight: 400;
+            top:50%;
+            left: 15px;
+        }
+        .arrowRight{
+            color: white;
+            position: absolute;
+            font-size: 2em;
+            font-weight: 400;
+            top:50%;
+            right: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 634px){
+    .carrouselContainer{
+        .carrPictures{
+            height:50vh;
+        }
+        .arrowsContainer{
+            .arrowLeft{
+                font-size: 5em;
+            }
+
+            .arrowRight{
+                font-size: 5em;
+            }
+
+        }
+    }
+}

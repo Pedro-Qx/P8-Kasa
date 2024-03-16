@@ -5,68 +5,63 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 2em;
 
-    .infoContainer {
-        display: flex;
-        flex-direction: column;
+   
         .oposition {
-                .ttl_loc_tag {
-                    display: flex;
-                    flex-direction: column;
+            display: flex;
+            .ttl_loc_tag {
+                display: flex;
+                flex-direction: column;
         
-                    .h2title {
-                        font-size: 2.5em;
-                        font-weight: 500;
-                        color: #FF6060;
-                        margin-bottom: 1vh;
-                    }
-        
-                    .location {
-                        font-size: 1.5em;
-                        margin-bottom: 1vh;
-                    }
-        
+                .h2title {
+                    font-size: 2em;
+                    font-weight: 500;
+                    color: #FF6060;
+                    margin-bottom: 1vh;
                 }
         
-                .host_stars {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-direction: row-reverse;
-                    align-items: center;
-        
-                    .host {
-                        display: flex;
-                    }
-        
-                    .stars {
-                        display: flex;
-        
-                    }
-        
+                .location {
+                    font-size: 1.2em;
+                    margin-bottom: 1vh;
                 }
-        
             }
+        
+            .host_stars {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                align-items: center;
+                       
+                .host {
+                    display: flex;
+                }
+        
+                .stars {
+                    display: flex;
+                }
+            }
+        }
+
         .display_collaps{
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             width: 100%;
             margin-bottom: 10px;
             margin-top: 10px;
             gap:20px;
-            
         }
-    }
+    
 }
 
 @media screen and (min-width: 634px){
     .logementContainer {
         
-        .infoContainer{
+        
             
-            .oposition {
-                display: flex;
+            .oposition {          
+                flex-wrap: wrap;
                 justify-content: space-between;
                 width: 100%;
             
@@ -78,16 +73,16 @@
                 .host_stars {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
-
+                    justify-content: center
                 }
             }
+
             .display_collaps {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                width: 100%;
+                width: auto;
             }
-        }
+        
     }
 }

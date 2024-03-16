@@ -3,42 +3,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 2em;
 }
-.logementContainer .infoContainer {
+.logementContainer .oposition {
+  display: flex;
+}
+.logementContainer .oposition .ttl_loc_tag {
   display: flex;
   flex-direction: column;
 }
-.logementContainer .infoContainer .oposition .ttl_loc_tag {
-  display: flex;
-  flex-direction: column;
-}
-.logementContainer .infoContainer .oposition .ttl_loc_tag .h2title {
-  font-size: 2.5em;
+.logementContainer .oposition .ttl_loc_tag .h2title {
+  font-size: 2em;
   font-weight: 500;
   color: #FF6060;
   margin-bottom: 1vh;
 }
-.logementContainer .infoContainer .oposition .ttl_loc_tag .location {
-  font-size: 1.5em;
+.logementContainer .oposition .ttl_loc_tag .location {
+  font-size: 1.2em;
   margin-bottom: 1vh;
 }
-.logementContainer .infoContainer .oposition .host_stars {
+.logementContainer .oposition .host_stars {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   flex-direction: row-reverse;
   align-items: center;
 }
-.logementContainer .infoContainer .oposition .host_stars .host {
+.logementContainer .oposition .host_stars .host {
   display: flex;
 }
-.logementContainer .infoContainer .oposition .host_stars .stars {
+.logementContainer .oposition .host_stars .stars {
   display: flex;
 }
-.logementContainer .infoContainer .display_collaps {
+.logementContainer .display_collaps {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 100%;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -46,24 +45,24 @@
 }
 
 @media screen and (min-width: 634px) {
-  .logementContainer .infoContainer .oposition {
-    display: flex;
+  .logementContainer .oposition {
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
   }
-  .logementContainer .infoContainer .oposition .ttl_loc_tag {
+  .logementContainer .oposition .ttl_loc_tag {
     display: flex;
     flex-direction: column;
   }
-  .logementContainer .infoContainer .oposition .host_stars {
+  .logementContainer .oposition .host_stars {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .logementContainer .infoContainer .display_collaps {
+  .logementContainer .display_collaps {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: auto;
   }
 }/*# sourceMappingURL=logement.module.css.map */

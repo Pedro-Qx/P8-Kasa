@@ -18,6 +18,7 @@
   0% {
     transform: translateY(-15%);
     transform-origin: top;
+    visibility: hidden;
   }
   100% {
     transform: translateY(0%);
@@ -37,9 +38,11 @@
   0% {
     transform: translateY(-15%);
     transform-origin: top;
+    visibility: hidden;
   }
   100% {
     transform: translateY(0%);
+    display: flex;
   }
 }
 @keyframes deployBackContianer {
@@ -49,40 +52,45 @@
   }
   100% {
     transform: translateY(-15%);
+    visibility: hidden;
     height: 0vh;
   }
 }
-.collapsContainerLg {
-  width: 100%;
+.display_collaps {
+  display: flex;
+  flex-direction: column;
 }
-.collapsContainerLg .logemCollaps {
+.display_collaps .collaps {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: auto;
   min-height: 4vh;
   background-color: #FF6060;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
+  z-index: 8;
 }
-.collapsContainerLg .logemCollaps .title {
+.display_collaps .collaps .title {
   color: white;
   font-weight: 700;
   font-size: 1rem;
 }
-.collapsContainerLg .logemCollaps .icon {
+.display_collaps .collaps .icon {
   cursor: pointer;
   font-weight: 700;
   color: white;
   font-size: 1rem;
 }
-.collapsContainerLg .logemCollaps .iconAnim {
+.display_collaps .collaps .iconAnim {
   animation: iconRot 0.5s ease-in-out forwards;
 }
-.collapsContainerLg .logemCollaps .iconBackAnim {
+.display_collaps .collaps .iconBackAnim {
   animation: iconRotBack 0.5s ease-in-out forwards;
 }
-.collapsContainerLg .displayOn {
+.display_collaps .displayOn {
+  display: flex;
   justify-content: center;
   align-items: center;
   min-width: auto;
@@ -91,61 +99,66 @@
   border-radius: 5px;
   animation: deployContainer 0.3s linear forwards;
 }
-.collapsContainerLg .displayOn .descript {
+.display_collaps .displayOn .descript {
   padding: 20px;
   font-size: 1rem;
   font-weight: 400;
-  animation: deployText 0.2s linear forwards;
+  animation: deployText 0.3s linear forwards;
 }
-.collapsContainerLg .displayOff {
+.display_collaps .displayOff {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
   background-color: #F6F6F6;
   border-radius: 5px;
-  animation: deployBackContianer 0.3s linear forwards;
+  animation: deployBackContianer 0.4s linear forwards;
   z-index: 1;
 }
-.collapsContainerLg .displayOff .descript {
+.display_collaps .displayOff .descript {
   padding: 20px;
   font-size: 1rem;
   font-weight: 400;
-  animation: deployBackText 0.2s linear forwards;
+  animation: deployBackText 0.3s linear forwards;
 }
 
-.collapsContainerAp {
-  width: 100%;
+.display_collapsLog {
+  display: flex;
+  flex-direction: column;
 }
-.collapsContainerAp .collaps {
+.display_collapsLog .collapsLog {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 5vh;
+  width: auto;
+  min-height: 4vh;
   background-color: #FF6060;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   z-index: 8;
 }
-.collapsContainerAp .collaps .title {
+.display_collapsLog .collapsLog .title {
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
 }
-.collapsContainerAp .collaps .icon {
+.display_collapsLog .collapsLog .icon {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
-.collapsContainerAp .collaps .iconAnim {
+.display_collapsLog .collapsLog .iconAnim {
   animation: iconRot 0.5s ease-in-out forwards;
 }
-.collapsContainerAp .collaps .iconBackAnim {
+.display_collapsLog .collapsLog .iconBackAnim {
   animation: iconRotBack 0.5s ease-in-out forwards;
 }
-.collapsContainerAp .displayOn {
-  justify-content: center;
+.display_collapsLog .displayOn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   min-width: auto;
   min-height: 10vh;
@@ -153,44 +166,50 @@
   border-radius: 5px;
   animation: deployContainer 0.3s linear forwards;
 }
-.collapsContainerAp .displayOn .descript {
-  padding: 20px;
+.display_collapsLog .displayOn .descriptLog {
+  display: flex;
+  flex-direction: column;
   font-size: 1rem;
   font-weight: 400;
-  animation: deployText 0.2s linear forwards;
+  animation: deployText 0.3s linear forwards;
 }
-.collapsContainerAp .displayOff {
-  justify-content: center;
+.display_collapsLog .displayOff {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: auto;
   background-color: #F6F6F6;
   border-radius: 5px;
-  animation: deployBackContianer 0.3s linear forwards;
+  animation: deployBackContianer 0.4s linear forwards;
   z-index: 1;
 }
-.collapsContainerAp .displayOff .descript {
-  padding: 20px;
+.display_collapsLog .displayOff .descriptLog {
+  display: flex;
+  flex-direction: column;
   font-size: 1rem;
   font-weight: 400;
-  animation: deployBackText 0.2s linear forwards;
+  animation: deployBackText 0.3s linear forwards;
 }
 
 @media screen and (min-width: 634px) {
-  .collapsContainerLg {
-    width: 42vw;
+  .display_collaps {
+    display: flex;
+    width: 80%;
   }
-  .collapsContainerAp {
-    width: 100%;
+  .display_collapsLog {
+    display: flex;
+    width: 50%;
   }
-  .collapsContainerAp .collaps {
-    min-height: 6vh;
-  }
-  .collapsContainerAp .collaps .title {
-    color: white;
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
-  .collapsContainerAp .collaps .icon {
-    font-size: 1.5rem;
+  .display_collapsLog .collapsLog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5vh;
+    background-color: #FF6060;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    z-index: 8;
   }
 }/*# sourceMappingURL=displaycollaps.module.css.map */

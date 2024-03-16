@@ -1,11 +1,10 @@
 import React from "react";
 import Banner from "../../components/Banner";
 import ItemListContainer from "../../components/ItemsContainer"
-import style from "./style.module.scss"
+import style from "./home.module.scss"
 import BgParph from "../../components/Bg-paragraph";
 
-
-const Home = ()=>{
+const Home = ({rentals})=>{
     const picSrc = "assets/Image source 1.png";
     return (
         <div className={style.items_container}>
@@ -13,7 +12,7 @@ const Home = ()=>{
                 <Banner className={style.bg_pic} bannerPic={picSrc}/> 
                 <BgParph />
             </div>
-            <ItemListContainer />
+            <ItemListContainer rentals={rentals}/>
         </div>
     )
 }

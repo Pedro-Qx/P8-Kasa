@@ -1,7 +1,7 @@
 import React from 'react';
-import style from "./error.module.scss";
+import style from "./errorPage.module.scss";
 
-function Error() {
+function ErrorPage() {
     return (
       <div className={style.container}>
         <h2 className={style.h2}>404</h2>
@@ -11,4 +11,4 @@ function Error() {
     )
   }
   
-  export default Error
+  export default ErrorPage

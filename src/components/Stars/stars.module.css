@@ -1,11 +1,14 @@
 .starsRating {
   display: flex;
-  font-size: 2em;
   gap: 5px;
+  width: auto;
 }
-.starsRating .redstar {
+.starsRating .star {
+  font-size: 2em;
+}
+.starsRating .star .redstar {
   color: #FF6060;
 }
-.starsRating .greystar {
+.starsRating .star .greystar {
   color: #E3E3E3;
 }/*# sourceMappingURL=stars.module.css.map */
