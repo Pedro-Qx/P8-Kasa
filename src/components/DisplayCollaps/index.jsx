@@ -15,6 +15,7 @@ const DisplayCollaps = ({princps, rental, descrip, equip}) => {
     if (equip) {
         descripContent = rental.equipments.map((eq, index) => (
             <p key={index} className={style.descriptLog}>{eq}</p>
+            
         ));
     } else if (princps) {
         descripContent = <p className={style.descript}>{princps.content}</p>;
@@ -33,7 +34,9 @@ const DisplayCollaps = ({princps, rental, descrip, equip}) => {
                 />
             </div>
             <div id="descripTxt" className={rotated ? style.displayOn : style.displayOff}>
+                <div className={style.contDescriptLog}>
                 {descripContent}
+                </div>
             </div>
         </div>
     );

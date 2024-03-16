@@ -74,7 +74,7 @@
 .display_collaps {
     display: flex;
     flex-direction: column;
-                
+
     .collaps {
         display: flex;
         justify-content: space-between;
@@ -86,7 +86,7 @@
         padding-right: 10px;
         border-radius: 8px;
         z-index: 8;
-                                
+
         .title {
             color: white;
             font-weight: 700;
@@ -99,12 +99,13 @@
             color: white;
             font-size: 1rem;
         }
-        .iconAnim{
+
+        .iconAnim {
             animation: iconRot 0.5s ease-in-out forwards;
         }
 
-        .iconBackAnim{
-            animation: iconRotBack 0.5s ease-in-out forwards;              
+        .iconBackAnim {
+            animation: iconRotBack 0.5s ease-in-out forwards;
         }
 
     }
@@ -118,6 +119,7 @@
         background-color: #F6F6F6;
         border-radius: 5px;
         animation: deployContainer 0.3s linear forwards;
+
         .descript {
             padding: 20px;
             font-size: 1rem;
@@ -126,15 +128,16 @@
         }
     }
 
-    .displayOff{
+    .displayOff {
         display: flex;
         justify-content: center;
         align-items: center;
         width: auto;
-        background-color:#F6F6F6;
+        background-color: #F6F6F6;
         border-radius: 5px;
         animation: deployBackContianer 0.4s linear forwards;
         z-index: 1;
+
         .descript {
             padding: 20px;
             font-size: 1rem;
@@ -144,7 +147,7 @@
     }
 }
 
-    //************Logements**********************//
+//************Logements**********************//
 .display_collapsLog {
     display: flex;
     flex-direction: column;
@@ -188,41 +191,45 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 20px;
         min-width: auto;
         min-height: 10vh;
         background-color: #F6F6F6;
         border-radius: 5px;
         animation: deployContainer 0.3s linear forwards;
-        
-        .descriptLog {
-            font-size: 1rem;
-            font-weight: 400;
-            animation: deployText 0.3s linear forwards;
+
+        .contDescriptLog {
+            padding: 20px;
+
+            .descriptLog {
+                font-size: 1rem;
+                font-weight: 400;
+                animation: deployText 0.3s linear forwards;
+            }
         }
     }
 
-    .displayOff{
+    .displayOff {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         width: auto;
-        padding: 20px;
-        background-color:#F6F6F6;
+        background-color: #F6F6F6;
         border-radius: 5px;
         animation: deployBackContianer 0.4s linear forwards;
         z-index: 1;
-        
-        .descriptLog {
-            font-size: 1rem;
-            
-            font-weight: 400;
-            animation: deployBackText 0.3s linear forwards;
+
+        .contDescriptLog {
+            padding: 20px;
+
+            .descriptLog {
+                font-size: 1rem;
+                font-weight: 400;
+                animation: deployBackText 0.3s linear forwards;
+            }
         }
     }
 }
-
 @media screen and (min-width: 634px) {
 
     .display_collaps {
@@ -238,13 +245,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-     
             min-height: 5vh;
             background-color: #FF6060;
             padding-left: 10px;
             padding-right: 10px;
             border-radius: 8px;
             z-index: 8;
+
+            .icon {
+                font-size: 1.5em;
+            }
         }
     }
 }
