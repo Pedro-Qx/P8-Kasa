@@ -10,7 +10,7 @@ import NavBar from '../NavBar';
 import Footer from '../Footer';
 import ErrorPage from '../ErrorPage';
 
-const App = ()=>{
+const App = () => {
 
     const [rentals, setrentals] = useState([]);
 
@@ -20,18 +20,19 @@ const App = ()=>{
                 setrentals(resp)
             })
     }, [])
-return(
-<Router>
-    <NavBar />
-        <Routes>
-          <Route path='/' element={<Home rentals={rentals}/>} />
-          <Route path='/apropos' element={<Apropos />} />
-          <Route path='/logements/:id' element={<Logement rentals={rentals}/>} />
-          <Route path='*' element={<ErrorPage />} />
-        </Routes>
-    <Footer />
-</Router>
-)
+
+    return (
+        <Router>
+            <NavBar />
+            <Routes>
+                <Route path='/' element={<Home rentals={rentals} />} />
+                <Route path='/apropos' element={<Apropos />} />
+                <Route path='/logements/:id' element={<Logement rentals={rentals} />} />
+                <Route path='*' element={<ErrorPage />} />
+            </Routes>
+            <Footer />
+        </Router>
+    )
 }
 
 export default App;

@@ -2,25 +2,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import style from "./displaycollaps.module.scss";
 import { useState } from 'react';
+//princps: info concernant les principes identitaires de Kasa pour le composant Apropos.
+//rental: info dynamique de l'appartement clické sur Home.
+//descrip: titre du collaps qui s'affiche sur Logement
+//equip: titre du collaps qui s'affiche sur logement 
 
 const DisplayCollaps = ({princps, rental, descrip, equip}) => {
     const [rotated, setRotated] = useState(false);
 
     const toggleRotation = () => {
-        setRotated(!rotated);
+        setRotated(!rotated); //inversion de la valeure booléenne de rotated.
     };
 
-    let descripContent;
+    let descripContent; //variable indéfinie.
     
     if (equip) {
+        //Création de l'array dscriptContent qui contient différents objets.
         descripContent = rental.equipments.map((eq, index) => (
             <p key={index} className={style.descriptLog}>{eq}</p>
-            
         ));
     } else if (princps) {
         descripContent = <p className={style.descript}>{princps.content}</p>;
     } else {
-        descripContent = <p className={style.descript}>{rental.description}</p>;
+        descripContent = <p className={style.descriptLog}>{rental.description}</p>;
     }
 
     return (
