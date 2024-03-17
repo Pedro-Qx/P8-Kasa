@@ -24,7 +24,7 @@ const DisplayCollaps = ({princps, rental, descrip, equip}) => {
     } else if (princps) {
         descripContent = <p className={style.descript}>{princps.content}</p>;
     } else {
-        descripContent = <p className={style.descriptLoggi}>{rental.description}</p>;
+        descripContent = <p className={style.descriptLog}>{rental.description}</p>;
     }
 
     return (
