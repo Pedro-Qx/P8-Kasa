@@ -1,10 +1,19 @@
 @import "src/components/Banner/banner.module.scss";
 @import "src/components/Bg-paragraph/bg-paragraph.module.scss";
 @import "src/components/Card/card.module.scss";
+@import "src/components/Carrousel/carrousel.module.scss";
+@import "src/components/DisplayCollaps/displaycollaps.module.scss";
+@import "src/components/ErrorPage/errorPage.module.scss";
 @import "src/components/Footer/footer.module.scss";
-@import "src/components/itemsContainer/itemsContainer.module.scss";
+@import "src/components/Host/host.module.scss";
+@import "src/components/ItemsContainer/itemsContainer.module.scss";
+@import "src/components/ItemsContainerApropos/itemscontainer.module.scss";
 @import "src/components/NavBar/navBar.module.scss";
+@import "src/components/Stars/stars.module.scss";
+@import "src/components/Tags/tags.module.scss";
+@import "src/pages/Apropos/apropos.module.scss";
 @import "src/pages/Home/home.module.scss";
+@import "src/pages/Logements/logement.module.scss";
 
 *{
     $mainColor: #FF6060;

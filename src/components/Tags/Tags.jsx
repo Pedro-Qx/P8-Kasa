@@ -6,7 +6,7 @@ const Tags = ({ rental }) => {
 
   useEffect(() => {
     const tagsContainer = document.getElementById("tagsContainer");
-    tagsContainer.innerHTML = ""; // Limpiar el contenedor antes de agregar nuevos elementos, si no se duplican.
+    tagsContainer.innerHTML = ""; // nétoyer le container avant d'ajouter les nouveaux éléments, sinon ils se dupliquent.
   if(tagsContainer){
     for (let i = 0; i < getTags.length; i++) {
       const tagDiv = document.createElement("div");
@@ -16,7 +16,7 @@ const Tags = ({ rental }) => {
     }
   }
 
-  }, [getTags]); // Este efecto solo se ejecutará cuando getTags cambie
+  }, [getTags]);
 
 
   return (

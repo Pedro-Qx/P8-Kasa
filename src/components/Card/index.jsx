@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./card.module.scss"
 
-const Card = ({rentls}) => { //desestructuration de l'objet titre = props.titre
+const Card = ({rentls}) => {
     
     return (
            <div className={style.card}>

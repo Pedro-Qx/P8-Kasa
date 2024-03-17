@@ -36,7 +36,7 @@
             top: 78%;
             left: 5%;
             width: 265px;
-            font-size: 1.2rem; //18px
+            font-size: 1.2rem;
         }
         
     }
@@ -58,8 +58,8 @@
 @media screen and (min-width: 1400px) {
     .card {
         .img {
-            width: 350px; // 240 340 (figma) 315 (yo)
-            height: 350px; //240 340
+            width: 350px; 
+            height: 350px;
         }
         .p {
             top: 77%;
@@ -71,8 +71,8 @@
 @media screen and (min-width: 1600px) {
     .card {
         .img {
-            width: 400px; // 240 340 (figma) 315 (yo)
-            height: 400px; //240 340
+            width: 400px; 
+            height: 400px;
         }
         .p {
             top: 79%;
