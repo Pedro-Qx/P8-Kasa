@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+.container .h2 {
+  font-size: 8em;
+  font-weight: 700;
+  color: #FF6060;
+  padding-bottom: 60px;
+}
+.container .errorMessage {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  color: #FF6060;
+  padding-bottom: 80px;
+}/*# sourceMappingURL=errorPage.module.css.map */

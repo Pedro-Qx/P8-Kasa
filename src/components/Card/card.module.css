@@ -1,40 +1,65 @@
-@charset "UTF-8";
 .card {
   position: relative;
-  flex-basis: 33.3333333333%;
-  display: flex;
-  height: 340px;
-  width: 340px;
-}
-.card:nth-child(n+4) {
-  display: none;
-  /* Ocultar las imágenes a partir de la séptima */
 }
 .card .img {
   background-size: cover;
   border-radius: 7px;
-  width: 340px;
-  height: 340px;
+  width: 100%;
+  height: auto;
 }
 .card .p {
   position: absolute;
-  top: 77%;
+  top: 69%;
   left: 5%;
-  width: 283px;
+  width: 67vw;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
   border-radius: 5px;
   display: flex;
   color: black;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 3vw;
 }
 
-@media screen and (min-width: 600px) {
-  .card {
-    flex-basis: 16.6666666667%;
+@media screen and (min-width: 900px) {
+  .card .img {
+    width: 340px;
+    height: 340px;
   }
-  .card:nth-child(-n+8) {
-    display: block;
+  .card .p {
+    top: 78%;
+    left: 5%;
+    width: 265px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .card .img {
+    width: 290px;
+    height: 290px;
+  }
+  .card .p {
+    top: 75%;
+    width: 230px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .card .img {
+    width: 350px;
+    height: 350px;
+  }
+  .card .p {
+    top: 77%;
+    width: 290px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .card .img {
+    width: 400px;
+    height: 400px;
+  }
+  .card .p {
+    top: 79%;
+    width: 340px;
   }
 }/*# sourceMappingURL=card.module.css.map */

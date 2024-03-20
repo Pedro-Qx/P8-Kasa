@@ -1,59 +1,49 @@
 @keyframes iconRot {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(180deg);
   }
 }
 @keyframes iconRotBack {
-  0% {
+  from {
     transform: rotate(180deg);
   }
-  100% {
+  to {
     transform: rotate(0deg);
   }
 }
-@keyframes deployText {
-  0% {
-    transform: translateY(-15%);
-    transform-origin: top;
-    visibility: hidden;
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-@keyframes deployBackText {
-  0% {
-    transform: translateY(0%);
-    transform-origin: bottom;
-  }
-  100% {
-    transform: translateY(-15%);
-    visibility: hidden;
-  }
-}
 @keyframes deployContainer {
-  0% {
-    transform: translateY(-15%);
-    transform-origin: top;
-    visibility: hidden;
+  from {
+    max-height: 0;
   }
-  100% {
-    transform: translateY(0%);
-    display: flex;
+  to {
+    max-height: 300px;
   }
 }
 @keyframes deployBackContianer {
-  0% {
-    transform: translateY(0%);
-    transform-origin: bottom;
+  from {
+    max-height: 300px;
   }
-  100% {
-    transform: translateY(-15%);
-    visibility: hidden;
-    height: 0vh;
+  to {
+    max-height: 0;
+  }
+}
+@keyframes deployText {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes deployBackText {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
   }
 }
 .display_collaps {
@@ -94,16 +84,17 @@
   justify-content: center;
   align-items: center;
   min-width: auto;
-  min-height: 10vh;
   background-color: #F6F6F6;
   border-radius: 5px;
-  animation: deployContainer 0.3s linear forwards;
+  animation: deployContainer 0.5s ease-in-out forwards;
+  overflow: hidden;
 }
 .display_collaps .displayOn .descript {
   padding: 20px;
   font-size: 1rem;
   font-weight: 400;
-  animation: deployText 0.3s linear forwards;
+  animation: deployText 0.5s ease-in-out forwards;
+  overflow: hidden;
 }
 .display_collaps .displayOff {
   display: flex;
@@ -112,14 +103,15 @@
   width: auto;
   background-color: #F6F6F6;
   border-radius: 5px;
-  animation: deployBackContianer 0.4s linear forwards;
-  z-index: 1;
+  animation: deployBackContianer 0.5s ease-in-out forwards;
+  overflow: hidden;
 }
 .display_collaps .displayOff .descript {
   padding: 20px;
   font-size: 1rem;
   font-weight: 400;
-  animation: deployBackText 0.3s linear forwards;
+  animation: deployBackText 0.5s ease-in-out forwards;
+  overflow: hidden;
 }
 
 .display_collapsLog {
@@ -159,37 +151,42 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   min-width: auto;
   min-height: 10vh;
   background-color: #F6F6F6;
   border-radius: 5px;
-  animation: deployContainer 0.3s linear forwards;
+  animation: deployContainer 0.5s ease-in-out forwards;
+  overflow: hidden;
 }
-.display_collapsLog .displayOn .descriptLog {
-  display: flex;
-  flex-direction: column;
+.display_collapsLog .displayOn .contDescriptLog {
+  padding: 20px;
+}
+.display_collapsLog .displayOn .contDescriptLog .descriptLog {
   font-size: 1rem;
   font-weight: 400;
-  animation: deployText 0.3s linear forwards;
+  animation: deployText 0.5s ease-in-out forwards;
+  overflow: hidden;
 }
 .display_collapsLog .displayOff {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width: auto;
   background-color: #F6F6F6;
   border-radius: 5px;
-  animation: deployBackContianer 0.4s linear forwards;
-  z-index: 1;
+  animation: deployBackContianer 0.5s ease-in-out forwards;
+  overflow: hidden;
 }
-.display_collapsLog .displayOff .descriptLog {
-  display: flex;
-  flex-direction: column;
+.display_collapsLog .displayOff .contDescriptLog {
+  padding: 20px;
+}
+.display_collapsLog .displayOff .contDescriptLog .descriptLog {
   font-size: 1rem;
   font-weight: 400;
-  animation: deployBackText 0.3s linear forwards;
+  animation: deployBackText 0.5s ease-in-out forwards;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 634px) {
@@ -211,5 +208,8 @@
     padding-right: 10px;
     border-radius: 8px;
     z-index: 8;
+  }
+  .display_collapsLog .collapsLog .icon {
+    font-size: 1.5em;
   }
 }/*# sourceMappingURL=displaycollaps.module.css.map */

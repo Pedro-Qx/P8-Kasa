@@ -22,7 +22,7 @@ const Logement = ({rentals})=>{
         if (rental) {
           setSelectedRental(rental);
         }
-      }, [id, rentals]);
+    }, [id, rentals]);
     
       
     return (

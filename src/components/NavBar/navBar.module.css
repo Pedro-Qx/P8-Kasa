@@ -16,4 +16,10 @@
 }
 .nav_bar .menu .menu_link:hover {
   text-decoration-line: underline;
+}
+
+@media screen and (min-width: 634px) {
+  .nav_bar {
+    margin: 2em 4em 2em 4em;
+  }
 }/*# sourceMappingURL=navBar.module.css.map */

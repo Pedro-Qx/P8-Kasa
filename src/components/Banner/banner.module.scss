@@ -1,3 +1,96 @@
-.banner{
-    background-size: cover;
+//Home
+.bannerContainer{
+    position: relative;
+    height: 119px;
+    width: 100%;
+    margin-bottom: 22px;
+    
+    .picture{
+        height: 119px;
+        width: 100%;
+        border-radius: 7px;
+        object-fit: cover;
+        position: absolute;
+    }
+    .filterPicH{
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top:0;
+        left: 0;
+        .pContainer{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            .p{
+                font-size: 22px;
+                color: white;
+                position: absolute;
+                top: 50%; 
+                left: 38%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
 }
+
+//A propos
+.bannerContainer{
+    position: relative;
+    height: 119px;
+    width: 100%;
+    margin-bottom: 22px;
+    
+    .picture{
+        height: 119px;
+        width: 100%;
+        border-radius: 7px;
+        object-fit: cover;
+        position: absolute;
+    }
+    .filterPicAp{
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top:0;
+        left: 0;
+        .pContainer{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            .p{
+                font-size: 22px;
+                color: white;
+                position: absolute;
+                top: 50%; 
+                left: 38%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 634px) {
+    .bannerContainer {
+        .filterPicH {
+            .pContainer {
+                .p {
+                    width:450px;
+                    font-size: 30px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+    }
+}
+
+

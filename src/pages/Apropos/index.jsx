@@ -8,10 +8,7 @@ const Apropos = ()=>{
     const picSrc = "assets/Image source 2.png";
     return (
         <div className={style.aprop_container}>
-            <div className={style.bannerContainer}>
-            <Banner bannerPic={picSrc} className={style.banner}/>
-            <div className={style.pic_filter}></div>
-            </div>
+            <Banner aproposBgPic={picSrc}/>
             <ItemsContainerApropos />
         </div>
     )

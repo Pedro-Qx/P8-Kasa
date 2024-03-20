@@ -4,12 +4,12 @@
     justify-content: center;
     flex-wrap: wrap;
     gap:20px;
-    .linksLogements{
+   /* .linksLogements{
         &:nth-child(n+4) {
             display: none;
-            /* Ocultar las imágenes a partir de la séptima */
+            // Ocultar las imágenes a partir de la séptima 
         }
-    }
+    }*/
 }
 
 @media screen and (min-width: 480px) {
@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (min-width: 900px) {
+/*@media screen and (min-width: 900px) {
     .item_list_container {
         .linksLogements {
             &:nth-child(-n+6) {
@@ -29,4 +29,4 @@
             }
         }
     }
-}
+}*/

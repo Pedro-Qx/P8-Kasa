@@ -1,6 +1,4 @@
 import React from "react";
-//import { useEffect, useState } from "react";
-
 import Card from "../Card";
 import style from "./itemsContainer.module.scss"
 import { Link } from "react-router-dom";

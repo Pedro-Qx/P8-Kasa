@@ -6,6 +6,26 @@
   height: 209px;
   background-color: black;
 }
-.footer .p {
+.footer .pContainer {
+  width: 100px;
+  margin-top: 10px;
+}
+.footer .pContainer .p {
+  width: auto;
   color: white;
+}
+
+@media screen and (min-width: 634px) {
+  .footer {
+    display: flex;
+  }
+  .footer .img {
+    margin-bottom: 30px;
+  }
+  .footer .pContainer {
+    width: 200px;
+  }
+  .footer .pContainer .p {
+    color: white;
+  }
 }/*# sourceMappingURL=footer.module.css.map */

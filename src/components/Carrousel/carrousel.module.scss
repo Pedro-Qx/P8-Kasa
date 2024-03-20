@@ -4,7 +4,7 @@
     .carrPictures{
         width: 100%;
         border-radius: 10px;
-        height: 35vh;
+        height: 30vh;
         object-fit: cover;
         position: relative;
         margin-top: 20px;
@@ -31,33 +31,31 @@
             right: 15px;
         }
     }
+    .counter{
+        position: absolute;
+        top:83%;
+        left: 50%;
+        font-weight: 500;
+        color: white;
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 634px){
     .carrouselContainer{
         .carrPictures{
-            height:50vh;
+            height:40vh;
         }
         .arrowsContainer{
             .arrowLeft{
-                font-size: 5em;
+                font-size: 4em;
             }
 
             .arrowRight{
-                font-size: 5em;
+                font-size: 4em;
             }
 
         }
     }
 }
 
-@media screen and (min-width: 1300px){
-    .carrouselContainer{
-                
-        .carrPictures{
-            height: 55vh;
-            
-        }
-    }
-
-}

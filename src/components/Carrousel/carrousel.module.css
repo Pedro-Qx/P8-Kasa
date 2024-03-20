@@ -4,7 +4,7 @@
 .carrouselContainer .carrPictures {
   width: 100%;
   border-radius: 10px;
-  min-height: 35vh;
+  height: 35vh;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
@@ -41,5 +41,10 @@
   }
   .carrouselContainer .arrowsContainer .arrowRight {
     font-size: 5em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .carrouselContainer .carrPictures {
+    height: 55vh;
   }
 }/*# sourceMappingURL=carrousel.module.css.map */

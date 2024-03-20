@@ -1,43 +1,59 @@
-// taille écran min 320px
-
 .card {
     position: relative;
     
     .img {
         background-size: cover;
+        position: relative;
         border-radius: 7px;
         width: 100%;
-        height: auto;
+        min-height:255px;
     }
-
-    .p {
+    .filterGrad{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+        border-radius: 7px;
+        width: 100%;
+        height: 100%;
         position: absolute;
-        top: 69%;
+        top:0;
+        left: 0;
+
+    }
+    .p {
+        top: 74%;
         left: 5%;
-        width: 67vw;
-        background-color: rgba(255, 255, 255, 0.7);
+        width: 58vw;
+        position: absolute;
         padding: 10px;
         border-radius: 5px;
         display: flex;
-        color: black;
+        color: white;
         font-weight: 700;
-        font-size: 3vw;
+        font-size: 1.2em;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .card {
+        .img {
+            width: 340px; 
+            min-height:300px;
+        }
+        .p {
+            width: 250px;
+            font-size: 1.5em;
+        }
+    }
+}
+
 
 @media screen and (min-width: 900px) {
     .card {
         .img {
             width: 340px; 
-            height: 340px; 
+            min-height:300px;
         }
         
-        .p {
-            top: 78%;
-            left: 5%;
-            width: 265px;
-            font-size: 1.2rem;
-        }
+        
         
     }
 }
@@ -50,7 +66,6 @@
         }
         .p {
             top: 75%;
-            width: 230px;
         }
     }
 }
@@ -62,8 +77,7 @@
             height: 350px;
         }
         .p {
-            top: 77%;
-            width: 290px;
+            top: 79%;
         }
     }
 }
@@ -75,8 +89,7 @@
             height: 400px;
         }
         .p {
-            top: 79%;
-            width: 340px;
+            top: 80%;
         }
     }
 }

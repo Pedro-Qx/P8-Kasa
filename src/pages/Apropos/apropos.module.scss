@@ -6,32 +6,6 @@
     margin-left: 2em;
     margin-right: 2em;
 
-    .bannerContainer {
-        height: 119px;
-        width: 100%;
-        border-radius: 7px;
-
-        object-fit: cover;
-        position: relative;
-    }
-
-    .banner {
-        height: 119px;
-        width: 100%;
-        border-radius: 7px;
-        -o-object-fit: cover;
-        object-fit: cover;
-        position: absolute;
-    }
-
-    .pic_filter {
-        position: relative;
-        height: 119px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 7px;
-    }
-
 }
 
 @media screen and (min-width: 634px){

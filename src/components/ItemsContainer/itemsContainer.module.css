@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .item_list_container {
   display: flex;
   align-items: center;
@@ -5,12 +6,21 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+.item_list_container .linksLogements:nth-child(n+4) {
+  display: none;
+  /* Ocultar las imágenes a partir de la séptima */
+}
 
-@media screen and (min-width: 600px) {
-  /*
-      background-color: $bg_color;
-      width: 1240px;
-      height: 829px;
-      border-radius: 25px;
-      */
+@media screen and (min-width: 480px) {
+  .item_list_container {
+    background-color: #F6F6F6;
+    padding: 5vw;
+    gap: 5vw;
+    border-radius: 25px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .item_list_container .linksLogements:nth-child(-n+6) {
+    display: block;
+  }
 }/*# sourceMappingURL=itemsContainer.module.css.map */

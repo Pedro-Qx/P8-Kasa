@@ -4,11 +4,20 @@
   width: auto;
 }
 .starsRating .star {
-  font-size: 2em;
+  font-size: 1em;
 }
-.starsRating .star .redstar {
+.starsRating .redstar {
   color: #FF6060;
 }
-.starsRating .star .greystar {
+.starsRating .greystar {
   color: #E3E3E3;
+}
+
+@media screen and (min-width: 634px) {
+  .starsRating {
+    gap: 8px;
+  }
+  .starsRating .star {
+    font-size: 1.2em;
+  }
 }/*# sourceMappingURL=stars.module.css.map */
